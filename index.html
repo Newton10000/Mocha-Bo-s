@@ -10,26 +10,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="coffee_favicon.png"/>
 </head>
 <style>
-  .menu-item {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 5px 0px;
-    font-size: 18px;
-  }
-  .item-description {
-    padding: 0px 200px 0px 15px;
-    font-size: 14px;
-    opacity: .9;
-  }
-  .item-container {
-    padding: 5px 15px 5px 15px;
-  }
-  .meal_header {
-    padding-left: 15px;
-  }
-  .food_container {
-    padding-top: 20px;
+  .invite-text {
+    margin-top: -10px;
   }
   .hours-container {
     margin-left: auto;
@@ -46,6 +28,34 @@
     font-size: 36px;
     text-align: center;
     margin-bottom: 30px;
+  }
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0px;
+    font-size: 18px;
+  }
+  .menu {
+    margin-bottom: 20px;
+  }
+  .item-description {
+    padding: 0px 200px 0px 15px;
+    font-size: 14px;
+    opacity: .9;
+  }
+  .item-container {
+    padding: 5px 15px 5px 15px;
+  }
+  .meal_header {
+    padding-left: 15px;
+  }
+  .food_container {
+    padding-top: 20px;
+  }
+  .footer {
+    text-align: center;
+    position: fixed;
   }
 </style>
 <body>
@@ -64,13 +74,10 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="#hours-of-operation">Hours of Operation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Our Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="#menu">Menu</a>
         </li>
       </ul>
     </div>
@@ -107,7 +114,7 @@
 
     <hr>
 
-    <div class="row">
+    <div class="row" id="hours-of-operation">
       <div class="col">
         <p class="hour-header">Hours of Operation</p>
       </div>
@@ -126,12 +133,13 @@
     <hr>
 
     <!-- Invite Text -->
-    <div class="row">
-      <div class="col">
-        <h2 class="text-center display-4 my-3">Come on over!</h2>
+    <div class="invite-text">
+      <div class="row">
+        <div class="col">
+          <h2 class="text-center display-4 my-3">Come on over!</h2>
+        </div>
       </div>
     </div>
-
     <!-- Image Reasons Section -->
     <div class="row justify-content-center mb-5">
 
@@ -170,7 +178,7 @@
       </div>
     </div> <!-- End Row Div -->
 
-    <div class="menu">
+    <div class="menu" id="menu">
       <h1 class="text-center">Menu</h1>
       <hr>
 
@@ -413,7 +421,9 @@
 
       </div>
 
-    </div>
+    </div> <!-- closing menu div -->
+
+    <hr>
 
   </div>
 
