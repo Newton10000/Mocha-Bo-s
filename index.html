@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <title>Mocha Bo's</title>
+</head>
+<style>
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+</style>
+<body>
+  <!-- Navbar Component -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="mocha_bo_logo_flat.png"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid" style="background:url('mocha_bo_jumbotron.png') no-repeat; background-size: cover;">
+    <div class="bg-secondary text-white text-center my-5">
+      <h1 class="display-3">Coffee a cut above</h1>
+      <p class="pb-2">Providing quality joe to the good people of Denver Colorado since 2018</p>
+    </div>
+  </div>
+
+  <!-- Container -->
+  <div class="container">
+    <!-- Quote Section -->
+    <div class="row">
+      <div class="col my-2">
+        <h3 class="font-italic font-weight-light">"We've loved going to Mocha Bo's since it opened!
+           The coffee is great, the food is always fresh & the environment is so relaxing! Whether
+           I'm going on a date, or want to finish a project, Mocha's Bo's is my place!"</h2>
+        <p class="font-weight-bold font-italic text-right">-Sarah Baker, <span class="font-weight-light">Yelp</span></p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col my-2">
+        <h3 class="font-italic font-weight-light">"Our only knock against Mocha Bo's is that it isn't open 24 hours a day. We can't get enough of this spot!"</h2>
+        <p class="font-weight-bold font-italic text-right">-Johnathan Kenworthy, <span class="font-weight-light">Trip Advisor</span></p>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Why Adhoc? Text -->
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center display-4 my-3">Come on over!</h2>
+      </div>
+    </div>
+
+    <!-- Image Reasons Section -->
+    <div class="row justify-content-center mb-5">
+
+      <div class="col-8 col-md-4">
+        <!-- First card goes here -->
+        <div class="card border-1 text-center">
+          <img src="cappucino.jpeg" class="card-img-top" alt="Drink"/>
+          <div class="card-body">
+            <h3>Drink</h3>
+            <p class="card-text">Award winning beverages served all day. Tea and other beverages also served</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-8 col-md-4">
+        <!-- Second card goes here -->
+        <div class="card border-1 text-center">
+          <img src="mocha_bo_sandwiches.jpeg" class="card-img-top" alt="Eat"/>
+          <div class="card-body">
+            <h3>Eat</h3>
+            <p class="card-text">Our chefs prepare menu items made to order. Breakfast and lunch options available</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-8 col-md-4">
+        <!-- Third card goes here -->
+        <div class="card border-1 text-center">
+          <img src="live_music.jpeg" class="card-img-top" alt="Smart Icon"/>
+          <div class="card-body">
+            <h3>Hangout</h3>
+            <p class="card-text">We proudly host live shows, as well as an open mic every Thursday at 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End Row Div -->
+    <div class="menu">
+      <h1 class="text-center">Menu</h1>
+      <hr>
+      <h2>Drinks</h2>
+      <div class="notes">
+      </div>
+
+        <div class="item-container">
+          <div class="menu-item">
+            <div class="name">House Espresso</div>
+            <div class="price">3</div>
+          </div>
+        </div>
+
+        
+          <div class="menu-item">
+            <div class="name">Macchiatto</div>
+            <div class="price">3.5</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="name">Cappuccino</div>
+            <div class="price">3.75</div>
+          </div>
+
+        <div class="menu-item">
+          <div class="name">Latte</div>
+          <div class="price">Regular 4 / Large 4.75</div>
+            <p>Housemade Vanilla, Caramel, or Chocolate / Add .75 each / Sub Alternative Milk +1</p>
+        </div>
+
+        <div class="menu-item">
+          <div class="name">House Cup</div>
+            <div class="price">2</div>
+            <p>Free refills while in-house</p>
+        </div>
+
+        <div class="menu-item">
+          <div class="name">Cold Brew</div>
+            <div class="price">Small 3.5 / Large 4</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="name">Hot / Iced Tea</div>
+            <div class="price">3</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="name">Chai</div>
+            <div class="price">Small 4 / Large 4.5</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="name">Kombucha</div>
+            <div class="price">Small 4 / Large 6</div>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">2021 Mocha Bo's &copy; - All rights reserved</footer>
+
+  <!-- Bootstrap's JavaScript Files -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>
