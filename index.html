@@ -7,17 +7,45 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <title>Mocha Bo's</title>
+  <link rel="shortcut icon" type="image/x-icon" href="coffee_favicon.png"/>
 </head>
 <style>
   .menu-item {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 5px 0px;
+    font-size: 18px;
   }
   .item-description {
-    padding: 5px 200px 16px 15px;
+    padding: 0px 200px 0px 15px;
     font-size: 14px;
     opacity: .9;
+  }
+  .item-container {
+    padding: 5px 15px 5px 15px;
+  }
+  .meal_header {
+    padding-left: 15px;
+  }
+  .food_container {
+    padding-top: 20px;
+  }
+  .hours-container {
+    margin-left: auto;
+    margin-right: auto;
+    outline: solid;
+    outline-offset: 10px;
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .th {
+    text-align: right;
+  }
+  .hour-header {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
   }
 </style>
 <body>
@@ -79,7 +107,25 @@
 
     <hr>
 
-    <!-- Why Adhoc? Text -->
+    <div class="row">
+      <div class="col">
+        <p class="hour-header">Hours of Operation</p>
+      </div>
+    </div>
+
+    <table class="hours-container">
+      <tr><th>Sunday</th><td>10am - 5pm</td></tr>
+      <tr><th>Monday</th><td>6am - 5pm</td></tr>
+      <tr><th>Tuesday</th><td>6am - 5pm</td></tr>
+      <tr><th>Wednesday</th><td>6am - 5pm</td></tr>
+      <tr><th>Thursday</th><td>6am - 9pm</td></tr>
+      <tr><th>Friday</th><td>6am - 9pm</td></tr>
+      <tr><th>Saturday</th><td>10am - 9pm</td></tr>
+    </table>
+
+    <hr>
+
+    <!-- Invite Text -->
     <div class="row">
       <div class="col">
         <h2 class="text-center display-4 my-3">Come on over!</h2>
@@ -127,8 +173,14 @@
     <div class="menu">
       <h1 class="text-center">Menu</h1>
       <hr>
-      <h2>Drinks</h2>
-      <div class="notes">
+
+      <div class="menu-header">
+        <div><h2>Drinks</h2></div>
+        <!--
+        <div>
+          Served all day.
+        </div>
+        -->
       </div>
 
         <div class="item-container">
@@ -155,7 +207,7 @@
         <div class="item-container">
           <div class="menu-item">
             <div class="name">Latte</div>
-            <div class="price">Regular 4 / Large 4.75</div>
+            <div class="price">4.75</div>
           </div>
             <div class="item-description">
               Housemade Vanilla, Caramel, or Chocolate / Add .75 each / Sub Alternative Milk +1
@@ -172,26 +224,196 @@
             </div>
         </div>
 
+        <div class="item-container">
           <div class="menu-item">
             <div class="name">Cold Brew</div>
-            <div class="price">Small 3.5 / Large 4</div>
+            <div class="price">4</div>
+          </div>
+        </div>
+
+        <div class="item-container">
+          <div class="menu-item">
+            <div class="name">Hot / Iced Tea</div>
+            <div class="price">3</div>
+          </div>
+        </div>
+
+        <div class="item-container">
+          <div class="menu-item">
+            <div class="name">Chai</div>
+              <div class="price">4.5</div>
+          </div>
+        </div>
+
+        <div class="item-container">
+          <div class="menu-item">
+            <div class="name">Kombucha</div>
+            <div class="price">6</div>
+          </div>
+        </div>
+
+        <div class="item-container">
+          <div class="menu-item">
+            <div class="name">Orange Juice</div>
+            <div class="price">3</div>
+          </div>
+        </div>
+
+        <div class="item-container">
+          <div class="menu-item">
+            <div class="name">Fountain beverage</div>
+            <div class="price">2</div>
+          </div>
+        </div>
+
+        <div class="food_container">
+
+        <div class="menu-header">
+          <h2>Breakfast</h2>
+          <!--
+          <div class="header-description">
+            Served all day.
+          </div>
+        -->
+        </div>
+
+            <div class="item-container">
+              <div class="menu-item">
+                <div class="name">Breakfast Burrito</div>
+                <div class="price">8</div>
+              </div>
+                <div class="item-description">
+                  Flour tortilla filled with cage-free scrambled eggs, hash browns,
+                  house black beans, cheddar and jack cheeses. Topped with Pico de
+                  Gallo and choice of green chile or ranchero.
+                </div>
+            </div>
+
+            <div class="item-container">
+              <div class="menu-item">
+                <div class="name">Huevos Tostadas</div>
+                <div class="price">9</div>
+              </div>
+                <div class="item-description">
+                  Crispy corn tostada shells layered with black beans, jack cheese,
+                  green chile and ranchero sauces. Topped with two cage-free sunny
+                  side eggs, cotija cheese, scallions and pickled veggies.
+                </div>
+            </div>
+
+            <div class="item-container">
+              <div class="menu-item">
+                <div class="name">Breakfast Sandwich</div>
+                <div class="price">6</div>
+              </div>
+                <div class="item-description">
+                  Smoked bacon, cage-free egg & cheese on a bagel.
+                </div>
+            </div>
+
+            <div class="item-container">
+              <div class="menu-item">
+                <div class="name">Chicken Biscuit</div>
+                <div class="price">5</div>
+              </div>
+                <div class="item-description">
+                  Breaded chicken thigh on a freshly made, buttermilk biscuit.
+                </div>
+            </div>
+
+            <div class="item-container">
+              <div class="menu-item">
+                <div class="name">Bagel</div>
+                <div class="price">2</div>
+              </div>
+            </div>
+
+            <div class="item-container">
+              <div class="menu-item">
+                <div class="name">Muffin</div>
+                <div class="price">3</div>
+              </div>
+            </div>
+
+            <div class="item-container">
+              <div class="menu-item">
+                <div class="name">Buttermilk Biscuit</div>
+                <div class="price">2</div>
+              </div>
+            </div>
+
+        <div class="food_container">
+
+        <div class="menu-header">
+          <h2>Lunch</h2>
+          <!--
+          <div class="header-description">
+            Served all day.
+          </div>
+          -->
+        </div>
+
+          <div class="item-container">
+            <div class="menu-item">
+              <div class="name">Turkey Bo Sandwich</div>
+              <div class="price">8</div>
+            </div>
+              <div class="item-description">
+                Roasted turkey, cheddar, smoked bacon, avocado, tomato,
+                 romaine lettuce, garlic mayo.
+              </div>
           </div>
 
-        <div class="menu-item">
-          <div class="name">Hot / Iced Tea</div>
-            <div class="price">3</div>
+          <div class="item-container">
+            <div class="menu-item">
+              <div class="name">House Ham Sandwich</div>
+              <div class="price">7</div>
+            </div>
+              <div class="item-description">
+                Thick cut ham, microgreens, & hot-honey sauce on a freshly baked roll.
+              </div>
+          </div>
+
+          <div class="item-container">
+            <div class="menu-item">
+              <div class="name">Reuben</div>
+              <div class="price">9</div>
+            </div>
+              <div class="item-description">
+                House-prepped corned beef, Swiss cheese and sauerkraut with Russian dressing,
+                 served on rye.
+              </div>
+          </div>
+
+          <div class="item-container">
+            <div class="menu-item">
+              <div class="name">Cuban</div>
+              <div class="price">9</div>
+            </div>
+              <div class="item-description">
+                Pulled pork with ham, Swiss, chipotle mayo and pickle relish on a baguette.
+              </div>
+          </div>
+
+          <div class="item-container">
+            <div class="menu-item">
+              <div class="name">Fries</div>
+              <div class="price">4</div>
+            </div>
+          </div>
+
+          <div class="item-container">
+            <div class="menu-item">
+              <div class="name">Chips</div>
+              <div class="price">3</div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="menu-item">
-          <div class="name">Chai</div>
-            <div class="price">Small 4 / Large 4.5</div>
-        </div>
-
-        <div class="menu-item">
-          <div class="name">Kombucha</div>
-            <div class="price">Small 4 / Large 6</div>
-        </div>
       </div>
+
+    </div>
 
   </div>
 
